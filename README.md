@@ -4,8 +4,18 @@ A journey of learning front-end development.
 
 ## 相关资源
 
-- [front-end-handbook-2017](https://github.com/xitu/front-end-handbook-2017)（阅读）
-- [Front-End Web Development(The Big Nerd Ranch Guide)](https://www.amazon.com/Front-End-Web-Development-Ranch-Guides/dp/0134433947)
+- General
+  - [front-end-handbook-2017](https://github.com/xitu/front-end-handbook-2017)
+  - [Front-End Web Development(The Big Nerd Ranch Guide)](https://www.amazon.com/Front-End-Web-Development-Ranch-Guides/dp/0134433947)
+  - [MDN](https://developer.mozilla.org/zh-CN/)
+- React Native
+  - [React Native 官网](https://facebook.github.io/react-native/)
+  - [React Native 中文网](http://reactnative.cn)
+  - [facebook/react-native](https://github.com/facebook/react-native/)
+  - [reactnativecn/react-native-guide](https://github.com/reactnativecn/react-native-guide)
+  - [写给移动开发者的 React Native 指南](http://www.jianshu.com/p/b88944250b25)
+  - [An iOS Developer on React Native – iOS App Development – Medium](https://medium.com/ios-os-x-development/an-ios-developer-on-react-native-1f24786c29f0)
+  - [Using React Native: One Year Later](https://medium.com/m/global-identity?redirectUrl=https://blog.discordapp.com/using-react-native-one-year-later-91fd5e949933)
 
 ## 学习笔记
 一、浏览器编程基础
@@ -24,16 +34,51 @@ it receives in the response from the server; and present the result to the user.
 
 
 2.2.1 初始化 HTML
-2.2.2 链接一个样式表
+2.2.2 在 HTML 中链接一个 css 样式表
 2.2.3 添加内容
-2.2.4 添加图片
+2.2.4 添加图片（img标签）
 
-2.2.5 我的问题
+2.2.5 问题
 - HTML 是什么？浏览器是如何解析 HTML 文本，并展示的？
 - HTML 标签有哪些？
 - 一个 HTML 5 文件应该包括哪些内容？
 
+2.3 在浏览器中查看网页
+
+2.4 Chrome 中的开发工具
+
+2.5 延伸：CSS 的各个版本
+
+2.6 延伸：favicon.ico 图标
+
+2.7 实战：在我的项目中添加 favicon.ico 图标
+
 3. CSS 样式
+3.1 介绍
+
+3.2 创建样式基准（normalize.css）
+
+3.3 添加样式前在 HTML 中要做的准备——class 属性
+
+3.4 样式规则解析
+- 选择器（selector）
+- 声明（declarations）
+
+3.5 你的第一个样式规则
+- 盒子模型
+
+3.6 样式继承
+
+3.7 让图片适应 window
+
+3.8 颜色
+3.9 item 之间的间距调整
+3.10 添加字体
+3.11 实战：改颜色
+3.12 延伸：
+
+3.9 问题
+- normalize.css 是用来干嘛的？
 
 4. 响应式布局 FlexBox 
 
