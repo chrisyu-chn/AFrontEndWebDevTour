@@ -8,6 +8,7 @@ A journey of learning front-end development.
   - [front-end-handbook-2017](https://github.com/xitu/front-end-handbook-2017)
   - [Front-End Web Development(The Big Nerd Ranch Guide)](https://www.amazon.com/Front-End-Web-Development-Ranch-Guides/dp/0134433947)
   - [MDN](https://developer.mozilla.org/zh-CN/)
+
 - React Native
   - [React Native 官网](https://facebook.github.io/react-native/)
   - [React Native 中文网](http://reactnative.cn)
@@ -17,7 +18,27 @@ A journey of learning front-end development.
   - [An iOS Developer on React Native – iOS App Development – Medium](https://medium.com/ios-os-x-development/an-ios-developer-on-react-native-1f24786c29f0)
   - [Using React Native: One Year Later](https://medium.com/m/global-identity?redirectUrl=https://blog.discordapp.com/using-react-native-one-year-later-91fd5e949933)
 
-## 学习笔记
+## 知识点
+- [什么是 HTML5？](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML)
+
+## Reat Native 学习笔记
+一、入门基础
+1. 环境搭建
+2. 储备知识
+3. 基础概念
+3.1 属性
+3.2 状态
+3.3 样式
+3.4 高度与宽度
+3.5 FlexBox
+3.6 TextInput
+3.7 ScrollView
+3.8 ListView
+3.9 网络
+
+二、进阶指南
+
+## Front-End Web Development 学习笔记
 一、浏览器编程基础
 1. 搭建我的开发环境
 2. 创建我的第一个项目
