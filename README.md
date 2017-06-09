@@ -13,6 +13,7 @@ A journey of learning front-end development.
   - [React Native 官网](https://facebook.github.io/react-native/)（教程）
   - [React Native 中文网](http://reactnative.cn)（教程）
   - [facebook/react-native](https://github.com/facebook/react-native/)
+  - [jondot/awesome-react-native](https://github.com/jondot/awesome-react-native)
   - [reactnativecn/react-native-guide](https://github.com/reactnativecn/react-native-guide)
   - [写给移动开发者的 React Native 指南](http://www.jianshu.com/p/b88944250b25)
   - [An iOS Developer on React Native – iOS App Development – Medium](https://medium.com/ios-os-x-development/an-ios-developer-on-react-native-1f24786c29f0)
@@ -91,6 +92,7 @@ A journey of learning front-end development.
   - XMLHttpRequest（Ajax）
   - WebSocket
 5.11 定时器
+5.12 动画 
 
 三、进阶指南
 
