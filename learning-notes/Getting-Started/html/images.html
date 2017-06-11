@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Images</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+
+    <h1>HTML 图像</h1>
+
+    <!-- 插入图片 -->
+    <p>
+        一幅图像：
+        <img src="/img/otter1.jpg" width="128" height="128" />
+    </p>
+
+    <p>
+        一幅动画图像：
+        <img src="http://www.w3school.com.cn/i/eg_cute.gif" width="50" height="50" />
+    </p>
+
+
+
+    <!-- 文字中插入图片 -->
+    <h2>未设置对齐方式的图像：</h2>
+    <p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif"> 在文本中</p>
+    <h2>已设置对齐方式的图像：</h2>
+    <p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif" align="bottom"> 在文本中</p>
+    <p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif" align="middle"> 在文本中</p>
+    <p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif" align="top"> 在文本中</p>
+    <p>请注意，bottom 对齐方式是默认的对齐方式。</p>
+
+    <!-- 浮动的图片 -->
+    <p>
+        <img src="http://www.w3school.com.cn/i/eg_cute.gif" align="left"> 带有图像的一个段落。图像的 align 属性设置为 "left"。图像将浮动到文本的左侧。
+    </p>
+    <p>
+        <img src="http://www.w3school.com.cn/i/eg_cute.gif" align="right"> 带有图像的一个段落。图像的 align 属性设置为 "right"。图像将浮动到文本的右侧。
+    </p>
+
+    <!-- 设置图片显示尺寸 -->
+    <img src="http://www.w3school.com.cn/i/eg_mouse.jpg" width="50" height="50">
+    <br />
+    <img src="http://www.w3school.com.cn/i/eg_mouse.jpg" width="100" height="100">
+    <br />
+    <img src="http://www.w3school.com.cn/i/eg_mouse.jpg" width="200" height="200">
+    <p>通过改变 img 标签的 "height" 和 "width" 属性的值，您可以放大或缩小图像。</p>
+
+    <!-- 图片的替换文本 -->
+    <p>仅支持文本的浏览器无法显示图像，仅仅能够显示在图像的 "alt" 属性中指定的文本。在这里，"alt" 的文本是“向左转”。</p>
+    <p>请注意，如果您把鼠标指针移动到图像上，大多数浏览器会显示 "alt" 文本。</p>
+    <img src="http://www.w3school.com.cn/i/eg_goleft.gif" alt="向左转" />
+    <p>如果无法显示图像，将显示 "alt" 属性中的文本：</p>
+    <img src="http://www.w3school.com.cn/i/eg_goleft123.gif" alt="向左转" />
+
+    <!-- 图片中插入链接 -->
+    <p>
+        您也可以把图像作为链接来使用：
+        <a href="http://www.w3school.com.cn/example/html/lastpage.html">
+            <img border="0" src="http://www.w3school.com.cn/i/eg_buttonnext.gif" />
+        </a>
+    </p>
+
+    <!-- 创建带有可供点击区域的图像地图。其中的每个区域都是一个超级链接。 -->
+    <p>请点击图像上的星球，把它们放大。</p>
+
+    <img src="http://www.w3school.com.cn/i/eg_planets.jpg" border="0" usemap="#planetmap" alt="Planets" />
+
+    <map name="planetmap" id="planetmap">
+    <area
+    shape="circle"
+    coords="180,139,14"
+    href ="http://www.w3school.com.cn/example/html/venus.html"
+    target ="_blank"
+    alt="Venus" />
+
+    <area
+    shape="circle"
+    coords="129,161,10"
+    href ="http://www.w3school.com.cn/example/html/mercur.html"
+    target ="_blank"
+    alt="Mercury" />
+
+    <area
+    shape="rect"
+    coords="0,0,110,260"
+    href ="http://www.w3school.com.cn/example/html/sun.html"
+    target ="_blank"
+    alt="Sun" />
+    </map>
+
+    <p><b>注释：</b>img 元素中的 "usemap" 属性引用 map 元素中的 "id" 或 "name" 属性（根据浏览器），所以我们同时向 map 元素添加了 "id" 和 "name" 属性。</p>
+
+
+    <!-- 把一幅普通的图像设置为图像映射。 -->
+    <p>请把鼠标移动到图像上，看一下状态栏的坐标如何变化。</p>
+    <a href="http://www.w3school.com.cn/example/html/html_ismap.html">
+        <img src="http://www.w3school.com.cn/i/eg_planets.jpg" ismap />
+    </a>
+</body>
+
+</html>

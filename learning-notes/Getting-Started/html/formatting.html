@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML formatting</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<!-- gif 和 jpg 文件均可用作 HTML 背景。如果图像小于页面，图像会进行重复。 -->
+
+<body>
+  <h1>HTML 文本格式化</h1>
+
+    <!-- 文本格式化 -->
+    <b>This text is bold</b>
+    <br />
+    <strong>This text is strong</strong>
+    <br />
+    <big>This text is big</big>
+    <br />
+    <em>This text is emphasized</em>
+    <br />
+    <i>This text is italic</i>
+    <br />
+    <small>This text is small</small>
+    <br /> This text contains
+    <sub>subscript</sub>
+    <br /> This text contains
+    <sup>superscript</sup>
+
+    <!-- 预格式文本 -->
+    <br>
+    <pre>
+    这是
+    预格式文本。
+    它保留了      空格
+    和换行。
+    </pre>
+    <p>pre 标签很适合显示计算机代码：</p>
+    <pre>
+    for i = 1 to 10
+         print i
+    next i
+    </pre>
+
+    <!-- “计算机输出”标签 -->
+    <p>The following text is Computer Code</p>
+    <p>注：code 元素不保留多余的空格和折行，如需解决该问题，您必须在 pre 元素中包围代码。</p>
+    <code>
+      <pre>
+      var person = {
+          firstName:"Bill",
+          lastName:"Gates",
+          age:50,
+          eyeColor:"blue"
+    </pre>
+    </code>
+    <br />
+
+    <p>The following text is Keyboard input</p>
+    <kbd>File | Open...</kbd>
+    <br />
+
+    <p>The following text is Teletype text</p>
+    <tt>Teletype text</tt>
+    <br />
+
+    <p>The following text is Sample text </p>
+    <samp>
+      demo.example.com login: Apr 12 09:10:17
+      Linux 2.6.10-grsesc+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+    </samp>
+    <br />
+
+    <p>The following text is Computer variable</p>
+    <p><var>E</var> = <var>m</var> <var>c</var><sup>2</sup></p>
+    <br />
+    <p>
+        <b>注释：</b>这些标签常用于显示计算机/编程代码。
+    </p>
+
+    <!-- 地址 -->
+    <address>
+    Written by <a href="mailto:webmaster@example.com">Donald Duck</a>.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+    </address>
+
+    <!-- 缩写和首字母缩写 -->
+    <abbr title="etcetera">etc.</abbr>
+    <br />
+    <acronym title="World Wide Web">WWW</acronym>
+    <p>在某些浏览器中，当您把鼠标移至缩略词语上时，title 可用于展示表达的完整版本。</p>
+    <p>仅对于 IE 5 中的 acronym 元素有效。</p>
+    <p>对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。</p>
+
+    <!-- 文字方向 -->
+    <p>
+        如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)；
+    </p>
+    <bdo dir="rtl">
+    Here is some Hebrew text
+    </bdo>
+
+    <!-- 块引用 -->
+    这是长的引用：
+    <blockquote>
+        这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。
+    </blockquote>
+    这是短的引用：
+    <q>
+    这是短的引用。
+    </q>
+    <p>
+        使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。
+    </p>
+
+</body>
+
+</html>
