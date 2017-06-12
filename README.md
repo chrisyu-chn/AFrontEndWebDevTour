@@ -10,7 +10,9 @@ A journey of learning front-end development.
   - [MDN](https://developer.mozilla.org/zh-CN/)
   - [w3school](http://www.w3school.com.cn)
 
-- React Native
+- React/React Native
+  - [React 官网](https://facebook.github.io/react/)
+  - [React 入门实例教程-阮一峰](http://www.ruanyifeng.com/blog/2015/03/react.html)
   - [React Native 官网](https://facebook.github.io/react-native/)（教程）
   - [React Native 中文网](http://reactnative.cn)（教程）
   - [facebook/react-native](https://github.com/facebook/react-native/)
