@@ -1,6 +1,7 @@
 # Reat Native 学习笔记
 
 
+## 大纲
 一、入门基础             
 
 1. 环境搭建            
@@ -93,4 +94,13 @@
 8.2 React Native 与 weex 的对比            
 8.3 相比原生的优点和缺点            
 
+## 笔记
+
+## 问题
+1.React Native 如何实现 Live Reload 和 Hot Reloading 的（也就是说不需要 Xcode 中 run 一下，就能自动重新编译和运行）？
+2.React Native 所生成的 view 是如何在 APP 中进行绘制、渲染的，与 webView 和 UIKit 的 view 有什么不同？
+3.为什么一行 Objective-C 代码都不用写，只需要写写 JS 代码就能跑起来？React Native 代码是如何跑起来的？
+4.React Native 能处理复杂逻辑吗？能写一个完整的 APP 吗？原生能做的事，React Native 都能干嘛？
+5.React Native 中的代码都有哪些内容？是纯 JavaScript 代码吗？
+6.为什么要学习和使用 React Native？其优缺点在哪里？ 
 

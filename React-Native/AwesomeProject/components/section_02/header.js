@@ -12,9 +12,9 @@ export default class Header extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.font}>
-          <Text style={styles.font_1}>网易</Text>
-          <Text style={styles.font_2}>新闻</Text>
+        <Text style={styles.textCommon}>
+          <Text style={styles.text_1}>网易</Text>
+          <Text style={styles.text_2}>新闻</Text>
           <Text>有态度</Text>
         </Text>
       </View>
@@ -28,20 +28,21 @@ const styles = StyleSheet.create({
     height: 50,
     borderBottomWidth: 3 / PixelRatio.get(),
     borderBottomColor: '#EF2D36',
-    alignItems: 'center', // 使得 Text 组件水平居中
+    alignItems: 'center', // 使得 Text 组件水平居中，可以试试 flex-start
   },
 
-  font: {
+  textCommon: {
     fontSize: 25,
     fontWeight: 'bold',
     textAlign: 'center',  // 使文字在 Text 组件中居中
+    // backgroundColor: 'green',
   },
 
-  font_1: {
+  text_1: {
     color: '#CD1D1C',
   },
 
-  font_2: {
+  text_2: {
     color: '#FFF',
     backgroundColor: '#CD1D1C',
   },

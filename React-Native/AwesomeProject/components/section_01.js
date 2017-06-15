@@ -48,7 +48,7 @@ export default class CtripApp extends Component {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row', // 内部元素布局：水平
-    marginTop: 25,    // 顶部
+    marginTop: 100,    // 顶部
     marginLeft: 5,    // 左侧边距
     marginRight: 5,   // 右侧边距
     height: 84,       // 高度
