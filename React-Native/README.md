@@ -96,11 +96,29 @@
 
 ## 笔记
 
+#### 记录与思考
+
+#### 所遇问题
+1.[Function.prototype.bind()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) 的用法
+
+2.成功运行程序后，出现警告：`Warning: Each child in an array or iterator should have a unique "key" prop.`（见图）。
+- [知乎：react报错Each child in an array or iterator should。。？](https://www.zhihu.com/question/37701739)
+
+3.导航栏把 root view 中的 view 盖住了（见图）
+> 这是因为 iOS 中，只有当 root view 是 scroll view 时，才会自动将视图内容往下移 64 pt，而其他类型的 root view，是不会有任何处理的，所以就会出现被导航栏遮住的情况。
+
+4. ()=> 语法
+
+
+
 ## 问题
 1.React Native 如何实现 Live Reload 和 Hot Reloading 的（也就是说不需要 Xcode 中 run 一下，就能自动重新编译和运行）？
 2.React Native 所生成的 view 是如何在 APP 中进行绘制、渲染的，与 webView 和 UIKit 的 view 有什么不同？
 3.为什么一行 Objective-C 代码都不用写，只需要写写 JS 代码就能跑起来？React Native 代码是如何跑起来的？
 4.React Native 能处理复杂逻辑吗？能写一个完整的 APP 吗？原生能做的事，React Native 都能干嘛？
 5.React Native 中的代码都有哪些内容？是纯 JavaScript 代码吗？
-6.为什么要学习和使用 React Native？其优缺点在哪里？ 
+6.为什么要学习和使用 React Native？其优缺点在哪里？
+7.React Native 中如何使用第三方库？
+8.如何使用本地图片资源？
+9.如何打包发布 APP？
 

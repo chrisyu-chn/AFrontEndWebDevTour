@@ -6,13 +6,41 @@ import {
   TextInput,
   Text
 } from 'react-native';
+import Util from './utils.js';
 
 // 主 view
 export default class TextInputApp extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state={value: ''};
+    this.textDidChange = this.textDidChange.bind(this); // ES6的变化 https://github.com/goatslacker/alt/issues/283
+  }
+
+// 跨组件间通信 http://www.ghugo.com/react-native-communicate/
+  textDidChange(text) {
+    this.setState({
+      value: text,
+  });
+}
+
   render() {
     return (
       <View style={styles.container}>
-        <SearchBar></SearchBar>
+        <SearchBar textDidChange={this.textDidChange}></SearchBar>
+        <SearchResultList text={this.state.value}></SearchResultList>
+      </View>
+    );
+  }
+}
+
+// 搜索结果列表
+class SearchResultList extends Component {
+  render() {
+    return (
+      <View style={styles.searchResult}>
+        <Text style={styles.searchResultText} numberOfLines={1}>{this.props.text}庄</Text>
+        <Text style={styles.searchResultText} numberOfLines={1}>庄</Text>
       </View>
     );
   }
@@ -20,21 +48,23 @@ export default class TextInputApp extends Component {
 
 // 搜索框
 class SearchBar extends Component {
+
   render() {
     return (
-      <View style={styles.searchBar}>
-        <View style={{width: 250}}>
-          <TextInput
-          style={styles.textInput}
-          placeholder='Please enter your name'
-          returnKeyType='search'
-          clearButtonMode='while-editing'
-          autoFocus={true}/>
+        <View style={styles.searchBar}>
+          <View style={styles.proportionalFlex}>
+            <TextInput
+            style={styles.textInput}
+            placeholder='Please enter your name'
+            returnKeyType='search'
+            clearButtonMode='while-editing'
+            autoFocus={true}
+            onChangeText={this.props.textDidChange}/>
+          </View>
+          <View style={styles.button}>
+            <Text style={styles.buttonTitle}>search</Text>
+          </View>
         </View>
-        <View style={styles.button}>
-          <Text style={styles.buttonTitle}>search</Text>
-        </View>
-      </View>
     );
   }
 }
@@ -45,8 +75,12 @@ const styles = StyleSheet.create({
     marginTop: 100,
   },
 
-  searchBar: {
+  proportionalFlex: {
     flex: 1,
+  },
+
+  searchBar: {
+    height: 45,
     flexDirection: 'row',
     justifyContent: 'center',
   },
@@ -77,6 +111,15 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: 'bold',
   },
+
+  searchResult: {
+    height: 200,
+  },
+
+  searchResultText: {
+    fontSize: 16,
+  },
+
 });
 
 module.export = TextInputApp;
