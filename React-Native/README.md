@@ -99,7 +99,11 @@
 #### 记录与思考
 
 #### 所遇问题
-1.[Function.prototype.bind()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) 的用法
+1.事件和方法的传递，类和方法绑定，()=> 语法
+- [Function.prototype.bind()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) 的用法
+- [React与ES6（三）ES6类和方法绑定](http://www.jianshu.com/p/218d664ec28f)
+- [关于onClick事件和方法传递](http://react-china.org/t/onclick/4529)
+- [ES6 & ES7中的6种this绑定方法](https://github.com/dwqs/blog/issues/10)
 
 2.成功运行程序后，出现警告：`Warning: Each child in an array or iterator should have a unique "key" prop.`（见图）。
 - [知乎：react报错Each child in an array or iterator should。。？](https://www.zhihu.com/question/37701739)
@@ -107,7 +111,8 @@
 3.导航栏把 root view 中的 view 盖住了（见图）
 > 这是因为 iOS 中，只有当 root view 是 scroll view 时，才会自动将视图内容往下移 64 pt，而其他类型的 root view，是不会有任何处理的，所以就会出现被导航栏遮住的情况。
 
-4. ()=> 语法
+4. bind 的用法
+- [js基础知识---call,apply,bind的用法](http://www.jianshu.com/p/012223103355)
 
 
 

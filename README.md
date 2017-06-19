@@ -12,9 +12,11 @@ A journey of learning front-end development.
 
 - React/React Native
   - [React 官网](https://facebook.github.io/react/)
-  - [React 入门实例教程-阮一峰](http://www.ruanyifeng.com/blog/2015/03/react.html)
+  - [React 入门实例教程-阮一峰](http://www.ruanyifeng.com/blog/2015/03/react.html)（教程）
   - [React Native 官网](https://facebook.github.io/react-native/)（教程）
   - [React Native 中文网](http://reactnative.cn)（教程）
+  - [React 中文社区](http://react-china.org)
+  - [React Native中文社区](http://bbs.reactnative.cn)
   - [facebook/react-native](https://github.com/facebook/react-native/)
   - [jondot/awesome-react-native](https://github.com/jondot/awesome-react-native)
   - [reactnativecn/react-native-guide](https://github.com/reactnativecn/react-native-guide)

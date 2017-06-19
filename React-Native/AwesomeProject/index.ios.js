@@ -18,6 +18,10 @@ import CtripApp from './components/section_01.js';
 import NetEaseApp from './components/section_02/section_02.js';
 import NavigatorApp from './components/section_03.js';
 import TextInputApp from './components/section_04.js';
+import TouchableApp from './components/section_05.js';
+import ImageApp from './components/section_06.js';
+import TabBarIOSApp from './components/section_07.js';
+import WebViewApp from './components/section_08.js';
 
 // 主程序
 export default class AwesomeProject extends Component {
@@ -42,13 +46,13 @@ class List extends Component {
     super(props);
     this.pushNewSection = this.pushNewSection.bind(this); // https://github.com/facebook/react-native/issues/1110
     this.state = {};
+
   }
 
   pushNewSection(i, route) {
     console.log(i, route.title);
     this.props.navigator.push(route);
   }
-
 
 
   render() {
@@ -59,7 +63,8 @@ class List extends Component {
        title: '01 View 组件',
        rightButtonTitle: 'Next',
        onRightButtonPress: function() {
-         alert('查看下一课')
+         alert(this);
+        //  this.pushNewSection(1, routes[1]);
        }
      },
        {
@@ -77,10 +82,42 @@ class List extends Component {
         onRightButtonPress: function() {
           alert('查看下一课')
         }
-      },,
+      },
        {
         component: TextInputApp,
         title: '04 TextInput 组件',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
+       {
+        component: TouchableApp,
+        title: '05 Touchable 类组件',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
+       {
+        component: ImageApp,
+        title: '06 Image 组件',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
+       {
+        component: TabBarIOSApp,
+        title: '07 TabBarIOS 组件',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
+       {
+        component: WebViewApp,
+        title: '08 WebView 组件',
         rightButtonTitle: 'Next',
         onRightButtonPress: function() {
           alert('查看下一课')
