@@ -63,8 +63,8 @@ class List extends Component {
        title: '01 View 组件',
        rightButtonTitle: 'Next',
        onRightButtonPress: function() {
-         alert(this);
-        //  this.pushNewSection(1, routes[1]);
+        //  alert(this);
+        this.pushNewSection(1, routes[1]);
        }
      },
        {

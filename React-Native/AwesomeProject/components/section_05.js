@@ -25,7 +25,7 @@ export default class TouchableApp extends Component {
   }
 
   onLongPress() {
-    console.log('onLongPress');
+    alert('触发了长按');
   }
 
   onPressIn() {

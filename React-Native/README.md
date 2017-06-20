@@ -27,34 +27,62 @@
   - React 的 模块化组件的概念
 - 开发准备 ***
   - 配置文件
-  - 运行
+  - 运行（模拟器、真机）
   - 调试
   - 内部发布（打 ipa 包在真机上运行）
 
 3. 基础概念            
 
-3.1 属性（props）            
-3.2 状态（state）            
-3.3 样式（style）            
-3.4 高度与宽度            
-3.5 FlexBox 布局  ***           
+3.1 属性（props）   
+> 属性是不可以修改的
+
+3.2 状态（state）
+> 状态是可以修改的
+
+3.3 样式（style） 
+- FlexBox 布局
+- 高度与宽度   
+  - width
+  - height
+
+3.4 FlexBox 布局  ***     
+- flex  
+- flexDirection
+- alignItems
+- justifyContent
 
 二、API 和组件            
 
 4. 常见组件            
 
-4.1 View            
-4.2 Text             
-4.3 Image            
-4.4 TextInput            
-4.5 ScrollView            
-4.6 ListView            
-4.7 WebView            
-4.8 Touchable            
-4.9 NavigatorIOS            
-4.10 TabBarIOS            
-4.11 AlertIOS            
-4.12 ActionSheetIOS            
+4.1 View     
+
+4.2 Text    
+
+4.3 Image  
+- 加载本地图片
+- 加载网络图片
+
+4.4 TextInput    
+
+4.5 Touchable        
+- TouchableHighlight
+- TouchableOpacity
+- TouchableWithoutFeedback
+
+4.6 ScrollView       
+
+4.7 ListView     
+
+4.8 WebView      
+
+4.9 NavigatorIOS     
+
+4.10 TabBarIOS       
+
+4.11 AlertIOS         
+
+4.12 ActionSheetIOS                    
 
 5. 常见 API            
 
@@ -113,6 +141,8 @@
 
 4. bind 的用法
 - [js基础知识---call,apply,bind的用法](http://www.jianshu.com/p/012223103355)
+
+5.JavaScript 中有多少种遍历方式？
 
 
 

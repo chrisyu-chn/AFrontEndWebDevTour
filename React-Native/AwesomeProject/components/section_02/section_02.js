@@ -50,6 +50,7 @@ class BigNews extends Component {
   render() {
     var newsTagList = [];
     for (var i in this.props.news) {
+      // 遍历时必须要添加 key 属性
         var aNewsTag = (
           <View key={i} style={styles.newsItem}>
             <Text

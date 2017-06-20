@@ -44,23 +44,23 @@ class ImageBrowser extends Component {
     var index = this.state.currentIndex;
     if (index > 0) {
       index--;
-      this.state = {
+      this.setState({
         currentIndex: index,
-      };
-
-      alert(this.state.imageUrls[this.state.currentIndex]);
+      });
+    } else {
+      alert('已经是第一张了，骚年');
     }
   }
 
   viewNextOne() {
     var index = this.state.currentIndex;
-    if (index < this.state.imageUrls.length) {
+    if (index < this.state.imageUrls.length - 1) {
       index++;
-      this.state = {
+      this.setState({
         currentIndex: index,
-      }
-
-      alert(this.state.imageUrls[this.state.currentIndex]);
+      });
+    } else {
+      alert('已经是最后一张了，还想继续看？\n赶紧买会员吧，小伙砸！');
     }
 
   }
@@ -76,7 +76,8 @@ class ImageBrowser extends Component {
           <Image
           style={styles.image}
           source={{uri: imageUrls[this.state.currentIndex]}}
-          resizeMode='contain'/>
+          defaultSource={require('../img/otter1.jpg')}
+          resizeMode='cover'/>
         </View>
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={this.viewLastOne.bind(this)}>
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: 300,
+    width: 200,
     height: 300,
   },
 

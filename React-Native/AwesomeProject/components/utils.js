@@ -7,7 +7,7 @@ import Dimensions from 'Dimensions';
 const Util = {
   ratio: PixelRatio.get(),
   point: 1 / PixelRatio.get(),
-  size: {
+  windowSize: {
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height
   },
