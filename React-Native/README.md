@@ -39,12 +39,12 @@
     - 注释
     - 属性
     - 样式
-    - 事件绑定
+    - 事件绑定 ****
   - React.JS
   - React 的模块化组件概念
      - 什么是组件
      - 组件的生命周期
-     - 组件间的通信
+     - 组件间的通信 ****
         - 子组件调用父组件
         - 父组件调用子组件
      - 虚拟 DOM 的概念
@@ -68,7 +68,7 @@
   - width
   - height
 
-4.4 FlexBox 布局  ***     
+4.4 FlexBox 布局  ****    
 - flex  
 - flexDirection
 - alignItems
