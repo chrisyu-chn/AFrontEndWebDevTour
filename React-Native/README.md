@@ -141,6 +141,9 @@
 
 4. bind 的用法
 - [js基础知识---call,apply,bind的用法](http://www.jianshu.com/p/012223103355)
+- [彻底理解js中this的指向](http://web.jobbole.com/85198/)
+- [Javascript的this用法](http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html)
+- [Why and how to bind methods in your React component classes?](http://reactkungfu.com/2015/07/why-and-how-to-bind-methods-in-your-react-component-classes/)
 
 5.JavaScript 中有多少种遍历方式？
 
@@ -156,4 +159,8 @@
 7.React Native 中如何使用第三方库？
 8.如何使用本地图片资源？
 9.如何打包发布 APP？
+
+## 第三方资源
+- [react-native-training/react-native-elements](https://github.com/react-native-training/react-native-elements)
+- [fangwei716/30-days-of-react-native](https://github.com/fangwei716/30-days-of-react-native)
 
