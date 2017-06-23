@@ -14,14 +14,17 @@ import {
   Text,
 } from 'react-native';
 
-import CtripApp from './components/section_01.js';
-import NetEaseApp from './components/section_02/section_02.js';
-import NavigatorApp from './components/section_03.js';
-import TextInputApp from './components/section_04.js';
-import TouchableApp from './components/section_05.js';
-import ImageApp from './components/section_06.js';
-import TabBarIOSApp from './components/section_07.js';
-import WebViewApp from './components/section_08.js';
+import CtripApp from './components-example/section_01.js';
+import NetEaseApp from './components-example/section_02/section_02.js';
+import NavigatorApp from './components-example/section_03.js';
+import TextInputApp from './components-example/section_04.js';
+import TouchableApp from './components-example/section_05.js';
+import ImageApp from './components-example/section_06.js';
+import TabBarIOSApp from './components-example/section_07.js';
+import WebViewApp from './components-example/section_08.js';
+import ListViewApp from './components-example/section_09.js';
+import AsyncStorageApp from './api-example/section_01.js';
+import AlertIOSApp from './api-example/section_02.js';
 
 // 主程序
 export default class AwesomeProject extends Component {
@@ -123,6 +126,30 @@ class List extends Component {
           alert('查看下一课')
         }
       },
+       {
+        component: ListViewApp,
+        title: '09 ListView 组件',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
+       {
+        component: AsyncStorageApp,
+        title: '01 AsyncStorage API',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
+       {
+        component: AlertIOSApp,
+        title: '02 AlertIOS API',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
 
     ];
 
@@ -174,5 +201,7 @@ const styles = StyleSheet.create({
     lineHeight: 44,
   },
 });
+
+// alert(AppRegistry.runApplication);
 
 AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);

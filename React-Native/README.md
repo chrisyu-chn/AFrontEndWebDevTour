@@ -178,6 +178,9 @@
 
 5.JavaScript 中有多少种遍历方式？
 
+6.开发工具、插件
+- [ReactNative的Atom编辑器](http://www.jianshu.com/p/5d772d2c6f5e)
+- [开发工具Atom+Nuclide详解](http://www.hangge.com/blog/cache/detail_1490.html)
 
 
 ## 问题

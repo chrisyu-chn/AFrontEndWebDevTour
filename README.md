@@ -27,6 +27,8 @@ A journey of learning front-end development.
   - [构建 F8 2016 App](https://f8-app.liaohuqiu.net/#content)（教程）
   - [What is the best way to start learning React Native?](https://www.quora.com/What-is-the-best-way-to-start-learning-React-Native)
   - [bang：React Native通信机制详解](http://blog.cnbang.net/tech/2698/)
+  - [iOS 动态更新方案对比:JSPatch vs React Native](https://blog.cnbang.net/tech/3237/)
+  - [vczero: H5、React Native、Native应用对比分析](https://github.com/vczero/vczero.github.io/blob/master/react_native/H5、React%20Native、Native应用对比分析.md)
 
 ## 知识点
 - [什么是 HTML5？](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML)

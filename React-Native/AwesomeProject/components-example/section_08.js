@@ -52,13 +52,16 @@ export default class WebViewApp extends Component {
     return (
 
       <View style={styles.container}>
-        <WebView
-        ref={WEBVIEW_REF}
-        style={styles.webView}
-        source={require('../resources/webViewTest.html')}
-        onNavigationStateChange={this.onNavigationStateChange}
-        onShouldStartLoadWithRequest={this.onShouldStartLoadWithRequest}
-        />
+        <View style={styles.webViewContainer}>
+          <WebView
+          ref={WEBVIEW_REF}
+          style={styles.webView}
+          automaticallyAdjustContentInsets={false}
+          source={require('../resources/webViewTest.html')}
+          onNavigationStateChange={this.onNavigationStateChange}
+          onShouldStartLoadWithRequest={this.onShouldStartLoadWithRequest}
+          />
+        </View>
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={this.goBack}>
             <Text style={styles.text}>⬅️</Text>
@@ -78,6 +81,7 @@ export default class WebViewApp extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: 64,
     flexDirection: 'column',
     justifyContent: 'flex-end',
   },
@@ -86,9 +90,18 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
+  webViewContainer: {
+    flex: 1,
+    borderBottomWidth: 1,
+    borderBottomColor: 'gray',
+  },
+
   webView: {
     flex: 1,
-    backgroundColor: 'darksalmon',
+    marginTop: 10,
+    marginBottom: 10,
+    marginLeft: 10,
+    marginRight: 10,
   },
 
   buttonContainer: {
