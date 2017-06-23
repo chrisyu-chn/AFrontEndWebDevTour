@@ -11,7 +11,7 @@ import {
 import Util from './utils.js';
 
 // 参考教程：http://www.jianshu.com/p/2b5ba41f0170
-export default class ListViewApp extends Component {
+export default class SimpleListViewApp extends Component {
 
   constructor() {
     super();
@@ -45,7 +45,7 @@ export default class ListViewApp extends Component {
         // 取出该组所有的 contact
         contacts = jsonData[i].contacts;
         rowIDs[i] = [];
-        // 遍历所有 icon
+        // 遍历所有 contact
         for (var j = 0; j<contacts.length; j++){
             // 设置标识
             rowIDs[i].push(j);
@@ -53,6 +53,35 @@ export default class ListViewApp extends Component {
             dataBlob[i + ':' + j] = contacts[j];
         }
     }
+
+    /*
+dataBlob 的数据格式，实际上是一个 Object，在 getRowData 方法和 getSectionHeaderData 方法中，
+可以直接用 sectionID 和 rowID 从 dataBlob 中去取
+{
+   0 : "A",
+   0:0 : {
+   name: "Obama"
+ },
+   0:1 : {
+   name: "Obama"
+ },
+   0:2 : {
+   name: "Obama"
+ },
+   1 : "B",
+   1:0 : {
+   name: "Obama"
+  },
+   1:1 : {
+   name: "Obama"
+  },
+   1:2 : {
+   name: "Obama"
+  },
+
+}
+
+     */
 
     this.state = {
       dataSource: ds.cloneWithRowsAndSections(dataBlob, sectionIDs, rowIDs),
@@ -77,7 +106,7 @@ export default class ListViewApp extends Component {
   _renderSectionHeader(sectionData, sectionID) {
     return (
       <View style={styles.sectionHeader}>
-        <Text style={styles.proportionalFlex}>{sectionData}</Text>
+        <Text style={styles.sectionHeaderText}>{sectionData}</Text>
       </View>
     );
   }
@@ -90,10 +119,10 @@ export default class ListViewApp extends Component {
           // highlightRow(sectionID, rowID);
         }}>
           <View style={styles.row}>
-          <Image
-          source={require('../img/otter1.jpg')}
-          resizeMode='cover'
-          style={styles.rowImage}/>
+            <Image
+            source={require('../img/otter1.jpg')}
+            resizeMode='cover'
+            style={styles.rowImage}/>
             <Text style={styles.rowText}>
               {rowData + ' - ' + rowID}
             </Text>
@@ -142,8 +171,13 @@ const styles = StyleSheet.create({
   },
 
   sectionHeader: {
-    height: 20, 
-    backgroundColor: 'red'
+    height: 20,
+    backgroundColor: '#f6f6f6'
+  },
+
+  sectionHeaderText: {
+    flex: 1,
+    marginLeft: 10,
   },
 
   separator: {

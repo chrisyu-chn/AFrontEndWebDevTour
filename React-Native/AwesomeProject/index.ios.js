@@ -22,7 +22,8 @@ import TouchableApp from './components-example/section_05.js';
 import ImageApp from './components-example/section_06.js';
 import TabBarIOSApp from './components-example/section_07.js';
 import WebViewApp from './components-example/section_08.js';
-import ListViewApp from './components-example/section_09.js';
+import SimpleListViewApp from './components-example/section_09.js';
+import GridLayoutListViewApp from './components-example/section_10.js';
 import AsyncStorageApp from './api-example/section_01.js';
 import AlertIOSApp from './api-example/section_02.js';
 
@@ -127,8 +128,16 @@ class List extends Component {
         }
       },
        {
-        component: ListViewApp,
-        title: '09 ListView 组件',
+        component: SimpleListViewApp,
+        title: '09 ListView 组件（Simple）',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
+       {
+        component: GridLayoutListViewApp,
+        title: '10 ListView 组件（Grid Layout）',
         rightButtonTitle: 'Next',
         onRightButtonPress: function() {
           alert('查看下一课')
