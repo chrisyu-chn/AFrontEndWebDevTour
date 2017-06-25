@@ -10,9 +10,12 @@ import {
   StyleSheet,
   View,
   NavigatorIOS,
-  ScrollView,
   Text,
+  ListView,
+  TouchableOpacity,
 } from 'react-native';
+
+import Util from './components-example/utils.js';
 
 import CtripApp from './components-example/section_01.js';
 import NetEaseApp from './components-example/section_02/section_02.js';
@@ -32,7 +35,7 @@ export default class AwesomeProject extends Component {
   render() {
     return (
       <NavigatorIOS
-       style={styles.container}
+       style={styles.proportionalFlex}
        initialRoute={{
         component: List,
         title: 'React Native Tutoial',
@@ -49,20 +52,23 @@ class List extends Component {
   constructor(props) {
     super(props);
     this.pushNewSection = this.pushNewSection.bind(this); // https://github.com/facebook/react-native/issues/1110
-    this.state = {};
 
-  }
+    const ds = new ListView.DataSource({
+      getRowData: (dataBlob, sectionID, rowID) => {
+         var rowData = dataBlob[sectionID + ':' + rowID];
+         return rowData;
+      },
+      getSectionHeaderData: (dataBlob, sectionID) => {
+        return dataBlob[sectionID];
+      },
+      rowHasChanged: (prevRowData, nextRowData) => (prevRowData !== nextRowData),
+      sectionHeaderHasChanged: (prevSectionData, nextSectionData) => (prevSectionData !== nextSectionData),
+    });
 
-  pushNewSection(i, route) {
-    console.log(i, route.title);
-    this.props.navigator.push(route);
-  }
-
-
-  render() {
     // 列表数据源
     var routes = [
-      {
+      [
+        {
        component: CtripApp,
        title: '01 View 组件',
        rightButtonTitle: 'Next',
@@ -143,6 +149,8 @@ class List extends Component {
           alert('查看下一课')
         }
       },
+    ],
+    [
        {
         component: AsyncStorageApp,
         title: '01 AsyncStorage API',
@@ -159,38 +167,95 @@ class List extends Component {
           alert('查看下一课')
         }
       },
-
+      ]
     ];
 
-   // 根据数据创建列表各 item 的元素
-    var itemTagList = [];
-    for (var i in routes) {
-      var anItemTag = (
-        <View
-        key={i}
-        style={styles.listItem}>
-            <Text
-            style={styles.listItemText}
-            onPress={this.pushNewSection.bind(this, i, routes[i])}>
-            {'⭐️ ' + routes[i].title}
-            </Text>
-        </View>
-      );
+    var sectionTitle = ['组件', 'API'];
+    var dataBlob = {};
+    var sectionIDs = [];
+    var rowIDs = [];
 
-      itemTagList.push(anItemTag);
+    // 遍历数组中对应的数据并存入变量内
+    for (var i = 0; i<routes.length; i++) {
+        // 将组号存入 sectionIDs 中
+        sectionIDs.push(i);
+        // 将每组头部需要显示的内容存入 dataBlob 中
+        dataBlob[i] = sectionTitle[i];
+        // 取出该组所有的 route
+        routeSublist = routes[i];
+        rowIDs[i] = [];
+        // 遍历所有 route
+        for (var j = 0; j<routeSublist.length; j++){
+            // 设置标识
+            rowIDs[i].push(j);
+            // 根据标识,将数据存入 dataBlob
+            dataBlob[i + ':' + j] = routeSublist[j];
+        }
     }
 
+    this.state = {
+      dataSource: ds.cloneWithRowsAndSections(dataBlob, sectionIDs, rowIDs),
+    };
+
+  }
+
+  pushNewSection(i, route) {
+    console.log(i, route.title);
+    this.props.navigator.push(route);
+  }
+
+
+  render() {
     return (
-      <ScrollView style={styles.container}>
-        {itemTagList}
-      </ScrollView>
+        <ListView
+          automaticallyAdjustContentInsets={true}
+          style={styles.listView}
+          dataSource={this.state.dataSource}
+          renderSectionHeader={this._renderSectionHeader}
+          renderRow={this._renderRow.bind(this)}  // Why we need to bind this here?
+          renderSeparator={this._renderSeparator}
+          stickySectionHeadersEnabled={true}
+        />
+    );
+  }
+
+  _renderSectionHeader(sectionData, sectionID) {
+    return (
+      <View style={styles.sectionHeader}>
+        <Text style={styles.sectionHeaderText}>{sectionData}</Text>
+      </View>
+    );
+  }
+
+  _renderRow(rowData: string, sectionID: number, rowID: number, highlightRow: (sectionID: number, rowID: number) => void) {
+
+    return (
+      <TouchableOpacity onPress={() => {
+        this.pushNewSection(rowID, rowData);
+        }}>
+          <View style={styles.row}>
+            <Text style={styles.rowText}>
+              {'⭐️ ' + rowData['title']}
+            </Text>
+          </View>
+      </TouchableOpacity>
+    );
+  }
+
+  _renderSeparator(sectionID: number, rowID: number, adjacentRowHighlighted: bool) {
+// key={`${sectionID}-${rowID}`} 这是什么意思？
+    return (
+      <View
+        key={`${sectionID}-${rowID}`}
+        style={styles.separator}
+      />
     );
   }
 }
 
 // 样式，JSON 数据的格式
 const styles = StyleSheet.create({
-  container: {
+  listView: {
     flex: 1,
   },
 
@@ -198,16 +263,34 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  listItem: {
-    borderBottomWidth: 1,
-    borderBottomColor: '#DDD',
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    padding: 10,
   },
 
-  listItemText: {
+  rowText: {
+    flex: 1,
     marginLeft: 10,
-    marginRight: 10,
     fontSize: 20,
-    lineHeight: 44,
+  },
+
+  sectionHeader: {
+    height: 30,
+    backgroundColor: '#f6f6f6',
+    justifyContent: 'center',
+  },
+
+  sectionHeaderText: {
+    flex: 1,
+    marginLeft: 10,
+    fontSize: 17,
+    lineHeight: 30,
+  },
+
+  separator: {
+      height: Util.point,
+      backgroundColor: '#CCCCCC',
   },
 });
 
