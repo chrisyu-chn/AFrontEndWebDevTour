@@ -204,10 +204,21 @@ class List extends Component {
           alert('查看下一课')
         }
       },
-      ]
+    ],
+    [
+
+       {
+        component: TimerApp,
+        title: '01 使用第三方库',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
+    ],
     ];
 
-    var sectionTitle = ['组件', 'API'];
+    var sectionTitle = ['组件', 'API', '工程实践'];
     var dataBlob = {};
     var sectionIDs = [];
     var rowIDs = [];
@@ -259,7 +270,7 @@ class List extends Component {
   _renderSectionHeader(sectionData, sectionID) {
     return (
       <View style={styles.sectionHeader}>
-        <Text style={styles.sectionHeaderText}>{sectionData}</Text>
+        <Text style={styles.sectionHeaderText}>———— {sectionData} ————</Text>
       </View>
     );
   }
@@ -313,7 +324,7 @@ const styles = StyleSheet.create({
   },
 
   sectionHeader: {
-    height: 30,
+    height: 40,
     backgroundColor: '#f6f6f6',
     justifyContent: 'center',
   },
@@ -321,8 +332,9 @@ const styles = StyleSheet.create({
   sectionHeaderText: {
     flex: 1,
     marginLeft: 10,
-    fontSize: 17,
-    lineHeight: 30,
+    fontSize: 18,
+    lineHeight: 40,
+    textAlign: 'center',
   },
 
   separator: {
