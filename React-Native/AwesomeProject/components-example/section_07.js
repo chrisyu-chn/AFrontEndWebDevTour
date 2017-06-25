@@ -33,7 +33,7 @@ export default class TabBarIOSApp extends Component {
       {/*https://stackoverflow.com/questions/34130539/uncaught-error-invariant-violation-element-type-is-invalid-expected-a-string*/}
         <TabBarIOS.Item
         title='消息'
-        icon={require('../img/tabBarIOS/message.png')}
+        icon={require('../resources/img/tabBarIOS/message.png')}
         selected={this.state.selectedTab === 'message'}
         badge={this.state.notifCount > 0 ? this.state.notifCount : undefined}
         onPress={
@@ -48,7 +48,7 @@ export default class TabBarIOSApp extends Component {
 
         <TabBarIOS.Item
         title='联系人'
-        icon={require('../img/tabBarIOS/phone.png')}
+        icon={require('../resources/img/tabBarIOS/phone.png')}
         selected={this.state.selectedTab === 'contacts'}
         onPress={this.didSelectTab.bind(this, 'contacts')}>
           <ContactList></ContactList>
@@ -56,7 +56,7 @@ export default class TabBarIOSApp extends Component {
 
         <TabBarIOS.Item
         title='动态'
-        icon={require('../img/tabBarIOS/star.png')}
+        icon={require('../resources/img/tabBarIOS/star.png')}
         selected={this.state.selectedTab === 'star'}
         onPress={this.didSelectTab.bind(this, 'star')}>
           <ScrollView>
@@ -127,7 +127,7 @@ class ContactItem extends Component {
   render() {
     return (
       <View style={styles.contactItem}>
-        <Image source={require('../img/otter1.jpg')}
+        <Image source={require('../resources/img/otter1.jpg')}
         resizeMode='cover'
         style={styles.contactAvatar}/>
         <Text style={styles.contactName}>{this.props.name}</Text>

@@ -120,7 +120,7 @@ dataBlob 的数据格式，实际上是一个 Object，在 getRowData 方法和 
         }}>
           <View style={styles.row}>
             <Image
-            source={require('../img/otter1.jpg')}
+            source={require('../resources/img/otter1.jpg')}
             resizeMode='cover'
             style={styles.rowImage}/>
             <Text style={styles.rowText}>

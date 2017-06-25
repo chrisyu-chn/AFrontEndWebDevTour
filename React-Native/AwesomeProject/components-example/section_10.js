@@ -55,7 +55,7 @@ export default class GridLayoutListViewApp extends Component {
         }}>
           <View style={styles.item}>
             <Image
-            source={require('../img/otter1.jpg')}
+            source={require('../resources/img/otter1.jpg')}
             resizeMode='cover'
             style={styles.itemImage}/>
             <Text style={styles.itemText}>

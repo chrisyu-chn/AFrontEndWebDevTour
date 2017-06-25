@@ -71,12 +71,12 @@ class ImageBrowser extends Component {
         <View style={styles.imageContainer}>
         {/*
           load local image resources
-          source={require('../img/otter1.jpg')}
+          source={require('../resources/img/otter1.jpg')}
           */}
           <Image
           style={styles.image}
           source={{uri: imageUrls[this.state.currentIndex]}}
-          defaultSource={require('../img/otter1.jpg')}
+          defaultSource={require('../resources/img/otter1.jpg')}
           resizeMode='cover'/>
         </View>
         <View style={styles.buttonContainer}>
