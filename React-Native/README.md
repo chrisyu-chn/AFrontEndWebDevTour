@@ -182,6 +182,29 @@
 - [ReactNative的Atom编辑器](http://www.jianshu.com/p/5d772d2c6f5e)
 - [开发工具Atom+Nuclide详解](http://www.hangge.com/blog/cache/detail_1490.html)
 
+## 组件清单
+
+组件|功能|
+---|--|
+View|创建UI时最基础的组件|
+Text||
+Button|一个简单的跨平台的按钮组件。可以进行一些简单的定制。|
+Touchable 类||
+Image||
+TextInput||
+ActivityIndicator||
+
+## API 清单
+
+API|功能|
+--|--|
+AlertIOS||
+ActionSheetIOS||
+AsyncStorage||
+PixelRatio||
+网络||
+
+
 
 ## 问题
 1.React Native 如何实现 Live Reload 和 Hot Reloading 的（也就是说不需要 Xcode 中 run 一下，就能自动重新编译和运行）？

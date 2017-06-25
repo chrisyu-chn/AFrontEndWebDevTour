@@ -31,6 +31,9 @@ import ScrollViewApp from './components-example/section_11.js';
 
 import AsyncStorageApp from './api-example/section_01.js';
 import AlertIOSApp from './api-example/section_02.js';
+import ActionSheetIOSApp from './api-example/section_03.js';
+import NetworkingApp from './api-example/section_04.js';
+import TimerApp from './api-example/section_05.js';
 
 // 主程序
 export default class AwesomeProject extends Component {
@@ -172,6 +175,30 @@ class List extends Component {
        {
         component: AlertIOSApp,
         title: '02 AlertIOS API',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
+       {
+        component: ActionSheetIOSApp,
+        title: '03 ActionSheetIOS API',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
+       {
+        component: NetworkingApp,
+        title: '04 Networking API',
+        rightButtonTitle: 'Next',
+        onRightButtonPress: function() {
+          alert('查看下一课')
+        }
+      },
+       {
+        component: TimerApp,
+        title: '05 Timer API',
         rightButtonTitle: 'Next',
         onRightButtonPress: function() {
           alert('查看下一课')

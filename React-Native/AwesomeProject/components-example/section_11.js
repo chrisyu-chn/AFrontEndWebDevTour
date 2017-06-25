@@ -12,7 +12,9 @@ import {
 export default class ScrollViewApp extends Component {
   render() {
     return (
-      <ScrollView>
+      <ScrollView
+        horizontal={false}
+        bounces={false}>
         <Text style={{fontSize:96}}>Scroll me plz</Text>
         <Image source={require('../resources/img/otter1.jpg')} />
         <Image source={require('../resources/img/otter1.jpg')} />
@@ -51,10 +53,6 @@ export default class ScrollViewApp extends Component {
 
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'yellow',
-  },
 
   proportionalFlex: {
     flex: 1,
