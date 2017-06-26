@@ -29,6 +29,8 @@ A journey of learning front-end development.
   - [bang：React Native通信机制详解](http://blog.cnbang.net/tech/2698/)
   - [iOS 动态更新方案对比:JSPatch vs React Native](https://blog.cnbang.net/tech/3237/)
   - [vczero: H5、React Native、Native应用对比分析](https://github.com/vczero/vczero.github.io/blob/master/react_native/H5、React%20Native、Native应用对比分析.md)
+  - [看Facebook是如何优化React Native性能](https://github.com/gaohailang/blog/issues/4)
+  - [React Native 开源一年的总结](https://github.com/gaohailang/blog/issues/23)
 
 ## 知识点
 - [什么是 HTML5？](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML)
