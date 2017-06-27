@@ -35,6 +35,8 @@ import ActionSheetIOSApp from './api-example/section_03.js';
 import NetworkingApp from './api-example/section_04.js';
 import TimerApp from './api-example/section_05.js';
 
+import Talks from './other/section_01.js';
+
 // 主程序
 export default class AwesomeProject extends Component {
   render() {
@@ -208,7 +210,7 @@ class List extends Component {
     [
 
        {
-        component: TimerApp,
+        component: Talks,
         title: '01 使用第三方库',
         rightButtonTitle: 'Next',
         onRightButtonPress: function() {

@@ -128,7 +128,7 @@
 
 6. 实战指南            
 
-6.1 使用第三方库
+6.1 [使用第三方库](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/1)
 6.2 嵌入到现有原生应用 ***           
 6.3 封装原生模块            
 6.4 封装原生UI组件            
@@ -138,7 +138,7 @@
 
 7.工程实践            
 
-7.1 热更新            
+7.1 热更新 **            
 7.2 自动化测试  
 7.3 性能调优
 
@@ -147,8 +147,9 @@
 8.2 React Native 与 weex 的对比            
 8.3 相比原生的优点和缺点 
 
-9.优秀项目源码分析
+9.优秀完整项目
 - Facebook 官方开源的 [fbsamples/f8app](https://github.com/fbsamples/f8app)
+- 
 
 10.参考手册
 10.1 颜色
