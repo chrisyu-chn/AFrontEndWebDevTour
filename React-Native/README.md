@@ -147,14 +147,11 @@
 8.2 React Native 与 weex 的对比            
 8.3 相比原生的优点和缺点 
 
-9.优秀完整项目
-- Facebook 官方开源的 [fbsamples/f8app](https://github.com/fbsamples/f8app)
-- 
 
-10.参考手册
-10.1 颜色
+9.参考手册
+9.1 颜色
 
-## 笔记
+## [详细笔记](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues)
 
 #### 记录与思考
 
@@ -219,6 +216,9 @@ PixelRatio||
 9.如何打包发布 APP？
 
 ## 第三方资源
+- Facebook 官方开源的 [fbsamples/f8app](https://github.com/fbsamples/f8app)
 - [react-native-training/react-native-elements](https://github.com/react-native-training/react-native-elements)
 - [fangwei716/30-days-of-react-native](https://github.com/fangwei716/30-days-of-react-native)
+- [huanxsd/MeiTuan](https://github.com/huanxsd/MeiTuan)
+- [attentiveness/reading](https://github.com/attentiveness/reading)
 
