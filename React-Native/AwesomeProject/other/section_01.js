@@ -1,6 +1,10 @@
 /*
  * This example demonstrates how to use ParallaxScrollView within a ScrollView component.
+ * https://github.com/jaysoo/react-native-parallax-scroll-view
  */
+
+'use strict';
+
 import React, { Component } from 'react';
 import {
   Dimensions,

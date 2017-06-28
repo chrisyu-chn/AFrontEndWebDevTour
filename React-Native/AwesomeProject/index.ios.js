@@ -3,6 +3,7 @@
  * https://github.com/facebook/react-native
  * @flow
  */
+'use strict';
 
 import React, { Component } from 'react';
 import {
@@ -224,6 +225,7 @@ class List extends Component {
     var dataBlob = {};
     var sectionIDs = [];
     var rowIDs = [];
+    var routeSublist = [];
 
     // 遍历数组中对应的数据并存入变量内
     for (var i = 0; i<routes.length; i++) {
