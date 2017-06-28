@@ -29,6 +29,9 @@
 3. 储备知识            
 
 - JavaScript ***
+  - [理解 JavaScript 中的 this ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/12)
+  - [理解 JavaScript 中的方法绑定和 bind 方法，以及箭头函数 `()=>` ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/11)
+  - [JavaScript 中的严格模式（Strict mode） ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/7)
 - CSS ***
 - ES2015(ES6) ***
 - React
@@ -43,8 +46,8 @@
   - React.JS
   - React 的模块化组件概念
      - 什么是组件
-     - 组件的生命周期
-     - 组件间的通信 ****
+     - [组件的生命周期](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/8)
+     - [组件间的通信](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/13) ****
         - 子组件调用父组件
         - 父组件调用子组件
      - 虚拟 DOM 的概念
@@ -143,7 +146,7 @@
 
 6.1 [使用第三方库](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/1)            
 
-6.2 嵌入到现有原生应用 ***                 
+6.2 [嵌入到现有原生应用](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/4) ***                 
 
 6.3 封装原生模块               
    
@@ -157,7 +160,7 @@
 
 7.工程实践            
 
-7.1 热更新 **              
+7.1 [热更新](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/5) **              
     
 7.2 自动化测试        
 
@@ -178,6 +181,13 @@
 
 
 ## 问题
+- [React Native 常用命令 ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/3)
+- [React Native 编码规范](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/6)
+- [运行程序后，出现警告：`Warning: Each child in an array or iterator should have a unique "key" prop.` ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/10)
+- [导航栏（NavigationBar）把 root view 上方盖住了 ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/9)
+- [运行 React Native 项目时报错“CFBundleIdentifier, Does Not Exist” ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/2)
+
+## 思考
 1.React Native 如何实现 Live Reload 和 Hot Reloading 的（也就是说不需要 Xcode 中 run 一下，就能自动重新编译和运行）？
 2.React Native 所生成的 view 是如何在 APP 中进行绘制、渲染的，与 webView 和 UIKit 的 view 有什么不同？
 3.为什么一行 Objective-C 代码都不用写，只需要写写 JS 代码就能跑起来？React Native 代码是如何跑起来的？
