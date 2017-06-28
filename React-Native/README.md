@@ -1,21 +1,21 @@
-# Reat Native 学习笔记
+# Reat Native 学习[笔记](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues)
 
 
 ## 大纲
 
 一、入门基础             
 
-1.简介
-1.1 移动开发技术的过去、现在和未来
-1.2 什么是 React Native
-1.3 React Native 的前世今生
-1.4 React Native 与其他移动开发技术的对比
-1.5 为什么要使用 React Native？业内有哪些实际应用案例？
-1.6 如何客观看待 React Native 技术？
+1.简介       
+1.1 移动开发技术的过去、现在和未来      
+1.2 什么是 React Native      
+1.3 React Native 的前世今生      
+1.4 React Native 与其他移动开发技术的对比      
+1.5 为什么要使用 React Native？业内有哪些实际应用案例？      
+1.6 如何客观看待 React Native 技术？      
 
 2.环境搭建            
 
-- 安装工具
+- [开发工具及插件](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/14)
   - Homebrew
   - Node
   - Yarn
@@ -106,102 +106,75 @@
 
 5. 常用 API            
 
-5.1 应用入口 AppRegistry            
-5.2 数据存储 AsyncStorage            
-5.3 屏幕参数 PixelRatio            
-5.4 应用状态 AppStateIOS            
-5.5 状态栏 StatusBarIOS 
-5.6 AlertIOS         
-5.7 ActionSheetIOS 
-5.8 网络状态 NetInfo            
-5.9 相机访问 CameraRoll            
-5.10 震动 VibrationIOS            
-5.11 地理位置信息 Geolocation            
+5.1 应用入口 AppRegistry   
+
+5.2 数据存储 AsyncStorage
+
+5.3 屏幕参数 PixelRatio    
+
+5.4 应用状态 AppStateIOS    
+
+5.5 状态栏 StatusBarIOS      
+
+5.6 AlertIOS      
+         
+5.7 ActionSheetIOS       
+
+5.8 网络状态 NetInfo          
+        
+5.9 相机访问 CameraRoll         
+         
+5.10 震动 VibrationIOS          
+        
+5.11 地理位置信息 Geolocation        
+          
 5.12 网络请求            
   - Fetch
   - XMLHttpRequest（Ajax）
-  - WebSocket
+  - WebSocket      
+
 5.13 定时器            
+      
 5.14 动画             
 
 三、进阶指南            
 
 6. 实战指南            
 
-6.1 [使用第三方库](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/1)
-6.2 嵌入到现有原生应用 ***           
-6.3 封装原生模块            
-6.4 封装原生UI组件            
-6.5 链接原生库             
-6.6 在原生和 React Native 间通信  
+6.1 [使用第三方库](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/1)            
+
+6.2 嵌入到现有原生应用 ***                 
+
+6.3 封装原生模块               
+   
+6.4 封装原生UI组件          
+        
+6.5 链接原生库         
+          
+6.6 在原生和 React Native 间通信        
+
 6.7 Flux 数据流简介，redux 框架简介
 
 7.工程实践            
 
-7.1 热更新 **            
-7.2 自动化测试  
+7.1 热更新 **              
+    
+7.2 自动化测试        
+
 7.3 性能调优
 
-8.实现原理            
-8.1 React Native 源码分析和 React Native 的实现            
-8.2 React Native 与 weex 的对比            
+8.实现原理                  
+
+8.1 React Native 源码分析和 React Native 的实现              
+    
+8.2 React Native 与 weex 的对比           
+       
 8.3 相比原生的优点和缺点 
 
 
-9.参考手册
+9.参考手册      
+
 9.1 颜色
-
-## [详细笔记](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues)
-
-#### 记录与思考
-
-#### 所遇问题
-1.事件和方法的传递，类和方法绑定，()=> 语法
-- [Function.prototype.bind()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) 的用法
-- [React与ES6（三）ES6类和方法绑定](http://www.jianshu.com/p/218d664ec28f)
-- [关于onClick事件和方法传递](http://react-china.org/t/onclick/4529)
-- [ES6 & ES7中的6种this绑定方法](https://github.com/dwqs/blog/issues/10)
-
-2.成功运行程序后，出现警告：`Warning: Each child in an array or iterator should have a unique "key" prop.`（见图）。
-- [知乎：react报错Each child in an array or iterator should。。？](https://www.zhihu.com/question/37701739)
-
-3.导航栏把 root view 中的 view 盖住了（见图）
-> 这是因为 iOS 中，只有当 root view 是 scroll view 时，才会自动将视图内容往下移 64 pt，而其他类型的 root view，是不会有任何处理的，所以就会出现被导航栏遮住的情况。
-
-4. bind 的用法
-- [js基础知识---call,apply,bind的用法](http://www.jianshu.com/p/012223103355)
-- [彻底理解js中this的指向](http://web.jobbole.com/85198/)
-- [Javascript的this用法](http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html)
-- [Why and how to bind methods in your React component classes?](http://reactkungfu.com/2015/07/why-and-how-to-bind-methods-in-your-react-component-classes/)
-
-5.JavaScript 中有多少种遍历方式？
-
-6.开发工具、插件
-- [ReactNative的Atom编辑器](http://www.jianshu.com/p/5d772d2c6f5e)
-- [开发工具Atom+Nuclide详解](http://www.hangge.com/blog/cache/detail_1490.html)
-
-## 组件清单
-
-组件|功能|
----|--|
-View|创建UI时最基础的组件|
-Text||
-Button|一个简单的跨平台的按钮组件。可以进行一些简单的定制。|
-Touchable 类||
-Image||
-TextInput||
-ActivityIndicator||
-
-## API 清单
-
-API|功能|
---|--|
-AlertIOS||
-ActionSheetIOS||
-AsyncStorage||
-PixelRatio||
-网络||
-
 
 
 ## 问题
@@ -214,6 +187,7 @@ PixelRatio||
 7.React Native 中如何使用第三方库？
 8.如何使用本地图片资源？
 9.如何打包发布 APP？
+
 
 ## 第三方资源
 - Facebook 官方开源的 [fbsamples/f8app](https://github.com/fbsamples/f8app)
