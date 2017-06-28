@@ -5,13 +5,19 @@
 
 一、入门基础             
 
-1.简介       
+1.简介        
+
 1.1 移动开发技术的过去、现在和未来      
+
 1.2 什么是 React Native      
-1.3 React Native 的前世今生      
+
+1.3 React Native 的前世今生   
+
 1.4 React Native 与其他移动开发技术的对比      
+
 1.5 为什么要使用 React Native？业内有哪些实际应用案例？      
-1.6 如何客观看待 React Native 技术？      
+
+1.6 如何客观看待 React Native 技术？           
 
 2.环境搭建            
 
@@ -177,26 +183,37 @@
 
 9.参考手册      
 
-9.1 颜色
+9.1 [React Native 常用命令 ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/3)
+9.2 [React Native 编码规范](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/6)
+9.3 颜色
 
 
 ## 问题
-- [React Native 常用命令 ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/3)
-- [React Native 编码规范](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/6)
-- [运行程序后，出现警告：`Warning: Each child in an array or iterator should have a unique "key" prop.` ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/10)
-- [导航栏（NavigationBar）把 root view 上方盖住了 ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/9)
-- [运行 React Native 项目时报错“CFBundleIdentifier, Does Not Exist” ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/2)
+1. [运行程序后，出现警告：`Warning: Each child in an array or iterator should have a unique "key" prop.` ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/10)     
+
+2. [导航栏（NavigationBar）把 root view 上方盖住了 ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/9)         
+
+3. [运行 React Native 项目时报错“CFBundleIdentifier, Does Not Exist” ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/2)        
 
 ## 思考
-1.React Native 如何实现 Live Reload 和 Hot Reloading 的（也就是说不需要 Xcode 中 run 一下，就能自动重新编译和运行）？
-2.React Native 所生成的 view 是如何在 APP 中进行绘制、渲染的，与 webView 和 UIKit 的 view 有什么不同？
-3.为什么一行 Objective-C 代码都不用写，只需要写写 JS 代码就能跑起来？React Native 代码是如何跑起来的？
-4.React Native 能处理复杂逻辑吗？能写一个完整的 APP 吗？原生能做的事，React Native 都能干嘛？
-5.React Native 中的代码都有哪些内容？是纯 JavaScript 代码吗？
-6.为什么要学习和使用 React Native？其优缺点在哪里？
-7.React Native 中如何使用第三方库？
-8.如何使用本地图片资源？
-9.如何打包发布 APP？
+1. React Native 如何实现 Live Reload 和 Hot Reloading 的（也就是说不需要 Xcode 中 run 一下，就能自动重新编译和运行）？     
+
+2. React Native 所生成的 view 是如何在 APP 中进行绘制、渲染的，与 webView 和 UIKit 的 view 有什么不同？         
+
+3. 为什么一行 Objective-C 代码都不用写，只需要写写 JS 代码就能跑起来？React Native 代码是如何跑起来的？         
+
+4. React Native 能处理复杂逻辑吗？能写一个完整的 APP 吗？原生能做的事，React Native 都能干嘛？         
+
+5. React Native 中的代码都有哪些内容？是纯 JavaScript 代码吗？         
+
+6. 为什么要学习和使用 React Native？其优缺点在哪里？         
+
+7. React Native 中如何使用第三方库？         
+
+8. 如何使用本地图片资源？         
+
+9. 如何打包发布 APP？         
+
 
 
 ## 第三方资源
