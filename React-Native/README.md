@@ -166,11 +166,12 @@
 
 7.工程实践            
 
-7.1 [热更新](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/5) **              
+7.1 打包发布
+7.2 [热更新](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/5) **              
     
-7.2 自动化测试        
+7.3 自动化测试        
 
-7.3 性能调优
+7.4 性能调优、内存警告的处理
 
 8.实现原理                  
 
@@ -216,10 +217,50 @@
 
 
 
-## 第三方资源
+## 相关资源
+- [React 官网](https://facebook.github.io/react/)
+- [React 入门实例教程-阮一峰](http://www.ruanyifeng.com/blog/2015/03/react.html)（教程）
+- [React Native 官网](https://facebook.github.io/react-native/)（教程）
+- [React Native 中文网](http://reactnative.cn)（教程）
+- [React 中文社区](http://react-china.org)
+- [React Native中文社区](http://bbs.reactnative.cn)
+- [facebook/react-native](https://github.com/facebook/react-native/)
+- [jondot/awesome-react-native](https://github.com/jondot/awesome-react-native)
+- [reactnativecn/react-native-guide](https://github.com/reactnativecn/react-native-guide)
+- [crazycodeboy/RNStudyNotes](https://github.com/crazycodeboy/RNStudyNotes)
+- [写给移动开发者的 React Native 指南](http://www.jianshu.com/p/b88944250b25)
+- [构建 F8 2016 App](https://f8-app.liaohuqiu.net/#content)（教程）
 - Facebook 官方开源的 [fbsamples/f8app](https://github.com/fbsamples/f8app)
 - [react-native-training/react-native-elements](https://github.com/react-native-training/react-native-elements)
 - [fangwei716/30-days-of-react-native](https://github.com/fangwei716/30-days-of-react-native)
 - [huanxsd/MeiTuan](https://github.com/huanxsd/MeiTuan)
 - [attentiveness/reading](https://github.com/attentiveness/reading)
+- [有哪些 React Native 开发的作品推荐吗？](https://www.zhihu.com/question/37275973)
+- [REACT NATIVE模块桥接详解](http://www.dobest.me/blog/2015/10/16/React%20Native模块桥接详解/)
+
+
+## 业界讨论
+- [An iOS Developer on React Native – iOS App Development – Medium](https://medium.com/ios-os-x-development/an-ios-developer-on-react-native-1f24786c29f0)
+- [Using React Native: One Year Later](https://medium.com/m/global-identity?redirectUrl=https://blog.discordapp.com/using-react-native-one-year-later-91fd5e949933)
+- [What is the best way to start learning React Native?](https://www.quora.com/What-is-the-best-way-to-start-learning-React-Native)
+- [唐巧：谈谈 React Native](http://blog.devtang.com/2015/02/01/talk-about-react-native/)
+- [喵神：跨平台开发时代的 (再次) 到来？](https://onevcat.com/2015/03/cross-platform/)
+- [原生开发才是王道](http://stormzhang.com/2016/09/05/native-app-is-king/)
+- [React Native概述：背景、规划和风险](http://div.io/topic/938)
+- [鬼道：Native与Web的融合 - Qcon中React-Native演讲](http://www.infoq.com/cn/presentations/the-fusion-of-native-and-web)
+- [bang：React Native通信机制详解](http://blog.cnbang.net/tech/2698/)
+- [iOS 动态更新方案对比:JSPatch vs React Native](https://blog.cnbang.net/tech/3237/)
+- [vczero: H5、React Native、Native应用对比分析](https://github.com/vczero/vczero.github.io/blob/master/react_native/H5、React%20Native、Native应用对比分析.md)
+- [Weex & ReactNative & JSPatch大对比](http://awhisper.github.io/2016/07/22/Weex-ReactNative-JSPatch/)
+- [hi大头鬼hi：weex&ReactNative对比](https://zhuanlan.zhihu.com/p/21677103)
+- [看Facebook是如何优化React Native性能](https://github.com/gaohailang/blog/issues/4)
+- [React Native 开源一年的总结](https://github.com/gaohailang/blog/issues/23)
+- [如何评价 React Native？](https://www.zhihu.com/question/27852694)
+- [React Native和React有啥区别？](https://www.zhihu.com/question/30466658)
+- [React Native有什么优势？能跟原生比么？](https://www.zhihu.com/question/36722811)
+- [React Native是否会是下一个技术浪潮？](https://www.zhihu.com/question/43693705)
+- [如何看待苹果禁止 JSPatch 等 iOS APP 热更新方案？](https://www.zhihu.com/question/56794578)
+
+
+
 
