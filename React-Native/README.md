@@ -166,7 +166,8 @@
 
 7.工程实践            
 
-7.1 打包发布
+7.1 打包发布     
+
 7.2 [热更新](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/5) **              
     
 7.3 自动化测试        
