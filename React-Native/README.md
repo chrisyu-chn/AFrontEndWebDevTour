@@ -184,10 +184,12 @@
 
 9.参考手册      
 
-9.1 [React Native 常用命令 ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/3)
-9.2 [React Native 编码规范](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/6)
-9.3 颜色
+9.1 [React Native 常用命令 ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/3)       
 
+9.2 [React Native 编码规范](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/6)       
+
+9.3 颜色       
+ 
 
 ## 问题
 1. [运行程序后，出现警告：`Warning: Each child in an array or iterator should have a unique "key" prop.` ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/10)     
