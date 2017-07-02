@@ -34,7 +34,7 @@
 
 3. 储备知识            
 
-- JavaScript ***
+- [JavaScript](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/blob/master/learning-notes/JavaScript-learning-notes.md) ***
   - [理解 JavaScript 中的 this ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/12)
   - [理解 JavaScript 中的方法绑定和 bind 方法，以及箭头函数 `()=>` ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/11)
   - [JavaScript 中的严格模式（Strict mode） ](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/7)
@@ -246,6 +246,7 @@
 - [An iOS Developer on React Native – iOS App Development – Medium](https://medium.com/ios-os-x-development/an-ios-developer-on-react-native-1f24786c29f0)
 - [Using React Native: One Year Later](https://medium.com/m/global-identity?redirectUrl=https://blog.discordapp.com/using-react-native-one-year-later-91fd5e949933)
 - [What is the best way to start learning React Native?](https://www.quora.com/What-is-the-best-way-to-start-learning-React-Native)
+- [Comparing the Performance between Native iOS (Swift) and React-Native](https://github.com/xitu/gold-miner/blob/master/TODO/comparing-the-performance-between-native-ios-swift-and-react-native.md)[reddit](https://www.reddit.com/r/javascript/comments/5xsf6j/comparing_the_performance_between_native_ios/)
 - [唐巧：谈谈 React Native](http://blog.devtang.com/2015/02/01/talk-about-react-native/)
 - [喵神：跨平台开发时代的 (再次) 到来？](https://onevcat.com/2015/03/cross-platform/)
 - [原生开发才是王道](http://stormzhang.com/2016/09/05/native-app-is-king/)
