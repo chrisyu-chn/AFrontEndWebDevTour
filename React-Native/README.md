@@ -254,6 +254,8 @@
 - [鬼道：Native与Web的融合 - Qcon中React-Native演讲](http://www.infoq.com/cn/presentations/the-fusion-of-native-and-web)
 - [bang：React Native通信机制详解](http://blog.cnbang.net/tech/2698/)
 - [iOS 动态更新方案对比:JSPatch vs React Native](https://blog.cnbang.net/tech/3237/)
+- [React Native 在 Glow 的实践](http://tech.glowing.com/cn/react-native-at-glow/)
+- [在 Android 中集成 React Native 的经验分享](http://tech.glowing.com/cn/react_native_practice_on_android/)
 - [vczero: H5、React Native、Native应用对比分析](https://github.com/vczero/vczero.github.io/blob/master/react_native/H5、React%20Native、Native应用对比分析.md)
 - [Weex & ReactNative & JSPatch大对比](http://awhisper.github.io/2016/07/22/Weex-ReactNative-JSPatch/)
 - [hi大头鬼hi：weex&ReactNative对比](https://zhuanlan.zhihu.com/p/21677103)
