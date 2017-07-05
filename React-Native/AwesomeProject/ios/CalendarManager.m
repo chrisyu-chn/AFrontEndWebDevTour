@@ -11,6 +11,7 @@
 
 @implementation CalendarManager
 
+// 导出模块
 RCT_EXPORT_MODULE()
 
 // 手动转 date 格式

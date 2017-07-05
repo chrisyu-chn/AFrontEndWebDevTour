@@ -5,12 +5,25 @@ import {
   View,
 } from 'react-native';
 
+import MapView from './MapView.js';
+
 
 export default class NativeUIComponentsDemo extends Component {
+
+  // 监听事件回调
+  onRegionChange(event: Event) {
+     // Do stuff with event.region.latitude, etc.
+    alert(event.region.latitude);
+   }
+
   render() {
-    return (
-      <View style={styles.container}></View>
-    );
+    var region = {
+      latitude: 37.48,
+      longitude: -122.16,
+      latitudeDelta: 0.1,
+      longitudeDelta: 0.1,
+    };
+    return <MapView style={styles.container} region={region} zoomEnabled={true} onRegionChange={this.onRegionChange}/>;
   }
 }
 

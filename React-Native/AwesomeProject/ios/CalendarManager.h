@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <React/RCTBridgeModule.h>
 
+
+/**
+ 定义原生 API 模块
+ */
 @interface CalendarManager : NSObject <RCTBridgeModule>
 
 @end

@@ -221,7 +221,7 @@ class List extends Component {
       },
       {
        component: NativeAPIModulesDemo,
-       title: '02 封装 iOS 原生 API 模块',
+       title: '02 封装 iOS 原生模块',
        rightButtonTitle: 'Next',
        onRightButtonPress: function() {
          alert('查看下一课')
