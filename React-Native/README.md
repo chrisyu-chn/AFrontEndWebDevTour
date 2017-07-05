@@ -158,9 +158,9 @@
    
 6.4 [封装 iOS 原生 UI 组件](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/20)          
         
-6.5 链接原生库         
+6.5 [链接原生库](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/21)         
           
-6.6 在原生和 React Native 间通信        
+6.6 [原生和 React Native 之间的通信](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/22)        
 
 6.7 Flux 数据流简介，redux 框架简介
 
