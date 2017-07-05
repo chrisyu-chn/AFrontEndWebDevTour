@@ -154,9 +154,9 @@
 
 6.2 [嵌入到现有原生应用](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/4) ***                 
 
-6.3 [封装原生模块](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/19)               
+6.3 [封装 iOS 原生 API 模块](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/19)               
    
-6.4 封装原生UI组件          
+6.4 [封装 iOS 原生 UI 组件](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/issues/20)          
         
 6.5 链接原生库         
           
