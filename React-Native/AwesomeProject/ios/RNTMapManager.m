@@ -82,6 +82,7 @@ RCT_EXPORT_VIEW_PROPERTY(zoomEnabled, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock)
 
 
+// set 方法中添加自定义代码
 // NativeComponents iOS Documentation - RCT_CUSTOM_VIEW_PROPERTY https://github.com/facebook/react-native/issues/14436
 // - (void)set_region:(id)json forView:(RNTMap *)view withDefaultView:(RNTMap *)defaultView
 RCT_CUSTOM_VIEW_PROPERTY(region, MKCoordinateRegion, RNTMap) {
@@ -95,6 +96,20 @@ RCT_CUSTOM_VIEW_PROPERTY(region, MKCoordinateRegion, RNTMap) {
   mapView.delegate = self;
   
   return mapView;
+}
+
+
+// 导出常量  http://reactnative.cn/docs/0.45/native-modules-ios.html#%E5%AF%BC%E5%87%BA%E5%B8%B8%E9%87%8F
+- (NSDictionary <NSString *, id> *)constantsToExport {
+  
+  return @{
+           @"defaultRegion": @{
+               @"latitude": @(39.91),
+               @"longitude": @(116.40),
+               @"latitudeDelta": @(0.1),
+               @"longitudeDelta": @(0.1),
+               }
+           };
 }
 
 

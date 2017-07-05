@@ -10,9 +10,10 @@ import {
 
 var { requireNativeComponent } = require('react-native');
 
+var RNTMapConsts = require('react-native').UIManager.RNTMap.Constants;
+
 // requireNativeComponent 自动把这个组件提供给 "RNTMapManager"
 var RNTMap = requireNativeComponent('RNTMap', MapView);
-
 
 
 export default class MapView extends Component {
@@ -49,6 +50,7 @@ export default class MapView extends Component {
       onRegionChange: React.PropTypes.func,
   };
 
+  // 监听事件回调
   _onChange = (event: Event) => {
     if (!this.props.onRegionChange) {
       return;
@@ -57,7 +59,7 @@ export default class MapView extends Component {
   }
 
   render() {
-    return <RNTMap style={styles.container} region={this.props.region} onChange={this._onChange}/>;
+    return <RNTMap style={styles.container} region={RNTMapConsts.defaultRegion} onChange={this._onChange}/>;
   }
 }
 
