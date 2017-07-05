@@ -46,7 +46,7 @@ export default class SimpleListViewApp extends Component {
         // 将每组头部需要显示的内容存入 dataBlob 中
         dataBlob[i] = jsonData[i].title;
         // 取出该组所有的 contact
-        contacts = jsonData[i].contacts;
+        var contacts = jsonData[i].contacts;
         rowIDs[i] = [];
         // 遍历所有 contact
         for (var j = 0; j<contacts.length; j++){

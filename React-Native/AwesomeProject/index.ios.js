@@ -37,6 +37,8 @@ import NetworkingApp from './api-example/section_04.js';
 import TimerApp from './api-example/section_05.js';
 
 import Talks from './other/section_01.js';
+import NativeAPIModulesDemo from './other/section_02.js';
+import NativeUIComponentsDemo from './other/section_03.js';
 
 // 主程序
 export default class AwesomeProject extends Component {
@@ -209,7 +211,6 @@ class List extends Component {
       },
     ],
     [
-
        {
         component: Talks,
         title: '01 使用第三方库',
@@ -218,6 +219,22 @@ class List extends Component {
           alert('查看下一课')
         }
       },
+      {
+       component: NativeAPIModulesDemo,
+       title: '02 封装 iOS 原生 API 模块',
+       rightButtonTitle: 'Next',
+       onRightButtonPress: function() {
+         alert('查看下一课')
+       }
+     },
+     {
+      component: NativeUIComponentsDemo,
+      title: '03 封装 iOS 原生 UI 组件',
+      rightButtonTitle: 'Next',
+      onRightButtonPress: function() {
+        alert('查看下一课')
+      }
+    },
     ],
     ];
 
