@@ -8,7 +8,7 @@ A journey of learning front-end development.
 - [Front-End Web Development(The Big Nerd Ranch Guide)](https://www.amazon.com/Front-End-Web-Development-Ranch-Guides/dp/0134433947)
 - [MDN](https://developer.mozilla.org/zh-CN/)
 - [w3school](http://www.w3school.com.cn)
-
+- [关于 JavaScript 的好书有哪些？](https://www.zhihu.com/question/19562698)
 
 
 ## 知识点
